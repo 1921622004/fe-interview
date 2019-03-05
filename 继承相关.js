@@ -28,8 +28,3 @@ Developer.prototype.showOffSkill = function () {
 }
 
 let a = new Developer('aaa','male','go');
-
-console.log(a);
-console.log(a.sayHello());
-console.log(a.showOffSkill());
-console.log(a.__propto__);
