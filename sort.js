@@ -1,3 +1,4 @@
+// 冒泡排序
 function bubbleSort(ary) {
     for (var i = 0; i < ary.length; i++) {
         for (var j = 0; j < ary.length - i - 1; j++) {
@@ -11,6 +12,7 @@ function bubbleSort(ary) {
     return ary
 }
 
+// 快速排序
 function quickSort(ary) {
     if (ary.length <= 1) return ary
     var mid = Math.floor(ary.length / 2);
@@ -26,9 +28,4 @@ function quickSort(ary) {
         }
     };
     return quickSort(leftAry).concat([midItem], quickSort(rightAry))
-}
-
-// 去重
-function unique(ary) {
-    
 }
